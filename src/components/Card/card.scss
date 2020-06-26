@@ -1,0 +1,57 @@
+//colors
+$white: #fff;
+$color_silver_chalice_50_approx: rgba(173, 173, 173, 0.5);
+$color_alto_approx: #f0f0f0;
+$color_electric_violet_50_approx: rgba(180, 19, 255, 0.5);
+$black: black;
+$color_blue_gem_approx: rgb(63, 20, 161);
+
+//fonts
+$font_0: Lucida Sans;
+$font_1: Lucida Sans Regular;
+$font_2: Lucida Grande;
+$font_3: Lucida Sans Unicode;
+$font_4: Geneva;
+$font_5: Verdana;
+$font_6: sans-serif;
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color_alto_approx;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 2px 1px $color_silver_chalice_50_approx;
+  &:hover {
+    background-color: $white;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.card-wrapper {
+  padding: 2rem 1rem;
+}
+img {
+  border-radius: 100%;
+  border: 1px solid $color_alto_approx;
+  vertical-align: middle;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 5px $color_electric_violet_50_approx;
+  }
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+.username {
+  color: $color_blue_gem_approx;
+  font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6;
+  font-weight: 200;
+}

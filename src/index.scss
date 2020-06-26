@@ -1,0 +1,23 @@
+//colors
+$color_pigment_indigo_approx: rgb(96, 6, 119);
+$color_bondi_blue_approx: rgb(4, 177, 177);
+
+//fonts
+$font_0: Courier New;
+$font_1: Courier;
+$font_2: monospace;
+
+body {
+  margin: auto;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  font-family: $font_0, $font_1, $font_2;
+  background: linear-gradient(
+    to top left,
+    $color_pigment_indigo_approx 30%,
+    $color_bondi_blue_approx 100%
+  );
+  min-height: 100vh;
+  background-size: cover;
+  min-width: 300px;
+  max-width: 80%;
+}

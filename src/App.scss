@@ -1,0 +1,17 @@
+//colors
+$white: #fff;
+
+//fonts
+$font_0: Pacifico;
+$font_1: cursive;
+
+.App {
+  text-align: center;
+}
+.page-title {
+  font-family: $font_0, $font_1;
+  font-size: 4rem;
+  color: $white;
+  font-style: normal;
+  font-weight: 100;
+}
